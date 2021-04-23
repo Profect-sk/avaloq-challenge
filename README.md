@@ -1,4 +1,10 @@
 # Avaloq-challenge
+[![Build Status](http://www.v2202102139782142273.nicesrv.de:8080/buildStatus/icon?job=avaloq-challenge%2Fdevelop)](http://www.v2202102139782142273.nicesrv.de:8080/job/avaloq-challenge/job/develop/)
+[![Quality Gate Status](http://v2202102139782142273.nicesrv.de:9000/api/project_badges/measure?project=avaloq-challenge-develop&metric=alert_status)](http://v2202102139782142273.nicesrv.de:9000/dashboard?id=avaloq-challenge-develop)
+[![Coverage](http://v2202102139782142273.nicesrv.de:9000/api/project_badges/measure?project=avaloq-challenge-develop&metric=coverage)](http://v2202102139782142273.nicesrv.de:9000/dashboard?id=avaloq-challenge-develop)
+[![Code Smells](http://v2202102139782142273.nicesrv.de:9000/api/project_badges/measure?project=avaloq-challenge-develop&metric=code_smells)](http://v2202102139782142273.nicesrv.de:9000/dashboard?id=avaloq-challenge-develop)
+[![Bugs](http://v2202102139782142273.nicesrv.de:9000/api/project_badges/measure?project=avaloq-challenge-develop&metric=bugs)](http://v2202102139782142273.nicesrv.de:9000/dashboard?id=avaloq-challenge-develop)
+[![Vulnerabilities](http://v2202102139782142273.nicesrv.de:9000/api/project_badges/measure?project=avaloq-challenge-develop&metric=vulnerabilities)](http://v2202102139782142273.nicesrv.de:9000/dashboard?id=avaloq-challenge-develop)
 The `model` package contains the `Dice` class which is then extended by the `DiceDistribution`
 and `DiceSimulation` classes. `DiceDistribution` is being stored in the database. 
 The distribution of the roll sums and roll sum counts is being stored as a Collection Table.
