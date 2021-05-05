@@ -69,11 +69,13 @@ pipeline {
                   scannerHome = tool 'sonar'
                   GIT_BRANCH = GIT_BRANCH.replaceAll('/','-')
                   print GIT_BRANCH
+		  REPO_NAME = scm.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0];
+		  print REPO_NAME
                 }
                 withSonarQubeEnv('sonar') {
                   sh "${scannerHome}/bin/sonar-scanner " +
-                      "-Dsonar.projectKey=${PROJECT_NAME}-${GIT_BRANCH} "+
-                      "-Dsonar.projectName=${PROJECT_NAME}-${GIT_BRANCH} "+
+                      "-Dsonar.projectKey=${REPO_NAME}-${GIT_BRANCH} "+
+                      "-Dsonar.projectName=${REPO_NAME}-${GIT_BRANCH} "+
                       "-Dsonar.sourceEncoding=UTF-8 "+
                       "-Dsonar.sources=src/main "+
                       "-Dsonar.java.binaries=target/classes,target/test-classes "+
