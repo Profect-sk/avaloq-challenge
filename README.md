@@ -86,4 +86,4 @@ Example:
 ```
 Firstly a list of Dice distribution objects is fetched from the database also the total sum of rolls is fetched from the db.
 Then a HashMap is created which is the sum of all the fetched dice distributions.
-After that the percentage is created, and it is put in a HashMap.
+After that the percentage is created, and it is put in a HashMap. 
